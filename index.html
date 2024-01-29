@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Mehmet Emin Çelik, kişisel websitesi."
+        />
+        <meta name="keywords" content="Mehmet Emin Çelik" />
+
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/tailwindoutput.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+
+        <script src="./js/script.js" defer></script>
+
+        <title>Mehmet Emin Çelik & Website</title>
+    </head>
+
+    <body class="bg-[#111] relative">
+        <header class="py-7 px-4 md:px-8 2xl:px-12">
+            <div
+                class="header-contanier text-4xl md:text-3xl text-white flex justify-between items-center"
+            >
+                <a href="#" class="top-text">M ~ EÇ</a>
+
+                <div class="bars md:hidden">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </div>
+
+                <nav class="desktop-nav hidden md:block">
+                    <ul class="flex items-center gap-4">
+                        <li>
+                            <a
+                                href="#about-section"
+                                class="hover:text-[magenta]"
+                                >Hakkımda</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#skills-section"
+                                class="hover:text-[magenta]"
+                                >Beceriler</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#projects-section"
+                                class="hover:text-[magenta]"
+                                >Projeler</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#contact-footer"
+                                class="hover:text-[magenta]"
+                                >İletişim</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <div
+                    class="mobile-overlay hidden bg-white opacity-70 min-h-screen min-w-full absolute top-0 left-0"
+                ></div>
+
+                <nav
+                    class="mobile-nav hidden absolute top-0 left-0 w-full min-h-screen items-center justify-center"
+                >
+                    <ul
+                        class="flex flex-col text-black text-4xl font-bold items-center gap-4"
+                    >
+                        <li><a href="#about-section">Hakkında</a></li>
+                        <li><a href="#skills-section">Beceriler</a></li>
+                        <li><a href="#projects-section">Projeler</a></li>
+                        <li><a href="#contact-footer">İletişim</a></li>
+                    </ul>
+
+                    <button class="nav-close-btn absolute top-5 right-4">
+                        <i class="fa-solid fa-close text-black text-5xl"></i>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section py-24 px-4 md:py-32 xl:py-48">
+                <div
+                    class="hero-container max-w-fit mx-auto flex flex-col items-center lg:flex-row xl:gap-32 2xl:gap-96"
+                >
+                    <div class="hero-text">
+                        <div
+                            class="hero-top-text text-center text-white mb-8 xl:mb-16 max-w-[30rem] md:max-w-[42rem] lg:max-w-[46rem] xl:max-w-[52rem] mx-auto"
+                        >
+                            <h1
+                                class="text-5xl sm:text-6xl md:text-7xl xl:text-8xl"
+                            >
+                                <a
+                                    target="_blank"
+                                    class="text-[magenta] hover:text-[#bf4417] duration-300"
+                                    >Mehmet Emin Çelik <br
+                                /></a>
+                                Graphics Designer
+                            </h1>
+                        </div>
+
+                        <div
+                            class="hero-body-text mb-24 max-w-[46rem] md:max-w-[56rem] xl:max-w-[72rem] mx-auto"
+                        >
+                            <p
+                                class="text-2xl md:text-3xl lg:text-4xl text-center text-white"
+                            >
+                                Merhaba, Benim adım
+                                <a
+                                    target="_blank"
+                                    class="text-[magenta] hover:text-[#bf4417] duration-300"
+                                    >Mehmet Emin Çelik</a
+                                >
+                                grafik tasarımcı olarak öne çıkıyor. Video
+                                editasyonu ve Photoshop becerilerini ustaca
+                                kullanarak yaratıcılığını en üst düzeye
+                                çıkarıyor. Estetik dokunuşlarıyla her projeye
+                                özgünlük katıyor...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-img max-w-[30rem] mx-auto lg:max-w-[60%]">
+                        <img src="./images/heroA.png" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="about-section" class="about-section py-64 px-4">
+                <div class="about-container">
+                    <div class="about-top-text text-center mb-16">
+                        <h1
+                            class="text-5xl md:text-6xl 2xl:text-7xl lg:mb-32 text-white"
+                        >
+                            <span class="text-[magenta]">Hakkımda</span>
+                        </h1>
+                    </div>
+
+                    <div
+                        class="about-body-text max-w-[62rem] md:max-w-[72rem] lg:max-w-[88rem] mx-auto text-white text-center"
+                    >
+                        <p class="text-2xl md:text-3xl lg:text-4xl">
+                            Grafik dizayn ve video editasyon konularında
+                            uzmanlaşmış bir sanatçıyım. Her projede estetik
+                            zevkim ve teknik becerilerimle özgün çözümler
+                            sunuyorum. Görsel dünyada kendimi ifade etmek, benim
+                            tutkum.
+                            <a
+                                href="#projects-section"
+                                class="text-[magenta] hover:text-[#bf4417] duration-300"
+                                >Projelerim'e</a
+                            >
+                            aşağıdaki bölümden ulaşabilirsiniz
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills-section" class="skills-section py-48 px-4">
+                <div class="skills-container">
+                    <div class="skills-top-text text-center mb-48">
+                        <h1
+                            class="text-5xl md:text-6xl 2xl:text-7xl lg:mb-32 text-white"
+                        >
+                            <span class="text-[magenta]">Becerilerim</span>
+                        </h1>
+                    </div>
+
+                    <div
+                        class="skills mx-auto flex flex-col items-center md:grid md:justify-items-center md:grid-cols-2 xl:grid-cols-3 xl:gap-8 2xl:gap-12 2xl:grid-cols-4 gap-6"
+                    >
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i
+                                class="fa-solid fa-crop-simple text-7xl mb-12"
+                            ></i>
+
+                            <h2 class="text-5xl">Adobe Photoshop</h2>
+                        </div>
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i
+                                class="fa-solid fa-file-video text-7xl mb-12"
+                            ></i>
+
+                            <h2 class="text-5xl">Adobe After Effects</h2>
+                        </div>
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i class="fa-solid fa-video text-7xl mb-12"></i>
+
+                            <h2 class="text-5xl">Adobe Premier Pro</h2>
+                        </div>
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i class="fa-solid fa-pen-nib text-7xl mb-12"></i>
+
+                            <h2 class="text-5xl">Adobe Illustrator</h2>
+                        </div>
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i
+                                class="fa-solid fa-book-journal-whills text-7xl mb-12"
+                            ></i>
+
+                            <h2 class="text-5xl">Adobe InDesign</h2>
+                        </div>
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i class="fa-solid fa-camera text-7xl mb-12"></i>
+
+                            <h2 class="text-5xl">Adobe LightRoom</h2>
+                        </div>
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i class="fa-brands fa-unity text-7xl mb-12"></i>
+
+                            <h2 class="text-5xl">Adobe Dimension</h2>
+                        </div>
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i class="fa-brands fa-figma text-7xl mb-12"></i>
+
+                            <h2 class="text-5xl">Figma</h2>
+                        </div>
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i
+                                class="fa-solid fa-photo-film text-7xl mb-12"
+                            ></i>
+
+                            <h2 class="text-5xl">Fotoğraf ve Video Çekimi</h2>
+                        </div>
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i
+                                class="fa-brands fa-instagram text-7xl mb-12"
+                            ></i>
+
+                            <h2 class="text-5xl">Sosyal Medya Yönetimi</h2>
+                        </div>
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i
+                                class="fa-solid fa-ruler-horizontal text-7xl mb-12"
+                            ></i>
+                            <h2 class="text-5xl">UI/UX Dizayn</h2>
+                        </div>
+                        <div
+                            class="skill w-full max-w-[36rem] py-16 rounded-lg px-4 border-2 border-[magenta] text-white text-center"
+                        >
+                            <i class="fa-solid fa-play text-7xl mb-12"></i>
+
+                            <h2 class="text-5xl">Video Editleme</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects-section" class="projects-section py-32 px-12">
+                <div class="projects-container">
+                    <div class="projects-top-text text-white text-center mb-48">
+                        <h1
+                            class="text-5xl md:text-6xl 2xl:text-7xl lg:mb-32 text-white"
+                        >
+                            <span class="text-[magenta]">Projelerim</span>
+                        </h1>
+                    </div>
+
+                    <div class="js-projects mb-36">
+                        <div
+                            class="cpp-projects-top-text text-white mb-16 2xl:mb-24"
+                        >
+                            <div class="inline-block ml-4">
+                                <h1 class="text-4xl md:text-5xl 2xl:text-6xl">
+                                    Tasarım Projelerim
+                                </h1>
+                            </div>
+                        </div>
+
+                        <div
+                            class="projects mx-auto flex flex-col items-center md:flex-row md:justify-center gap-6 md:gap-16"
+                        >
+                            <div
+                                class="project inline-block py-16 w-full max-w-[40rem] rounded-lg px-4 text-white text-center"
+                            >
+                                <img src="images/1.jpeg" alt="" />
+                            </div>
+
+                            <div
+                                class="project inline-block py-16 w-full max-w-[40rem] rounded-lg px-4 text-white text-center"
+                            >
+                                <img src="images/2.jpeg" alt="" />
+                            </div>
+
+                            <div
+                                class="project inline-block py-16 w-full max-w-[40rem] rounded-lg px-4 text-white text-center"
+                            >
+                                <img src="images/3.jpeg" alt="" />
+                            </div>
+                            <div
+                                class="project inline-block py-16 w-full max-w-[40rem] rounded-lg px-4 text-white text-center"
+                            >
+                                <img src="images/4.jpeg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cpp-projects">
+                        <div
+                            class="cpp-projects-top-text text-white mb-16 2xl:mb-24"
+                        >
+                            <div class="inline-block">
+                                <h1 class="text-4xl md:text-5xl 2xl:text-6xl">
+                                    Video Kurgularım
+                                </h1>
+                            </div>
+                        </div>
+
+                        <div
+                            class="projects mx-auto flex flex-col items-center md:grid md:grid-cols-2 md:justify-items-center 2xl:grid-cols-3 gap-3 md:gap-16"
+                        >
+                            <div
+                                class="projectge py-16 rounded-lg px-4 text-center"
+                            >
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src="https://www.youtube.com/embed/ikG-Der4BRM"
+                                    title="Adalar Kimya Final"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <div
+                                class="projectge py-16 rounded-lg px-4 text-center"
+                            >
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src="https://www.youtube.com/embed/Fr97akDxEm4"
+                                    title="WhatsApp Video"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            
+                            <div
+                                class="projectge py-16 rounded-lg px-4 text-center"
+                            >
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src="https://www.youtube.com/embed/OQsd_uMZ6QY"
+                                    title="WhatsApp Video"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <div
+                                class="projectge py-16 rounded-lg px-4 text-center"
+                            >
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src="https://www.youtube.com/embed/IsN2PjL5X7U"
+                                    title="Sequence 01 kopyası"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <div
+                                class="projectge py-16 rounded-lg px-4 text-center"
+                            >
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src="https://www.youtube.com/embed/Rd_HUyFt4nI"
+                                    title="WhatsApp Video"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <div
+                                class="projectge py-16 rounded-lg px-4 text-center"
+                            >
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src="https://www.youtube.com/embed/CpmI3LP8WcA"
+                                    title="WhatsApp Video"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <div
+                                class="projectge py-16 rounded-lg px-4 text-center"
+                            >
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src="https://www.youtube.com/embed/P4Hxin1lsCE"
+                                    title="tekne 1 render"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="contact-footer" class="contact-footer py-8 px-4">
+                <div class="contact-container">
+                    <div class="contact-top-text text-white text-center mb-16">
+                        <h1
+                            class="text-5xl md:text-6xl 2xl:text-7xl lg:mb-32 text-white"
+                        >
+                            Benimle İletişim
+                            <span class="text-[magenta]">Kurun</span>
+                        </h1>
+                    </div>
+
+                    <div
+                        class="contact-body-text flex flex-col gap-8 text-[magenta] text-center"
+                    >
+                        <div class="contact-info flex flex-col gap-4 text-3xl">
+                            <div class="inline-block">
+                                <a
+                                    href="mailto:celikmehmet656@gmail.com"
+                                    class="hover:text-[#bf4417] duration-300"
+                                    >celikmehmet656@gmail.com</a
+                                >
+                            </div>
+                            <div class="inline-block">
+                                <a
+                                    href="tel:+905527011564"
+                                    class="hover:text-[#bf4417] duration-300"
+                                    >+90 552 701 15 64</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>

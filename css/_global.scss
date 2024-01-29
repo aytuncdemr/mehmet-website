@@ -1,0 +1,33 @@
+header {
+    .desktop-nav {
+        a:link::after,
+        a:visited::after {
+            display: block;
+            content: "";
+            width: 0%;
+            height: 0.2rem;
+
+            background-color: coral;
+            transition: all 0.4s;
+        }
+
+        a:hover::after,
+        a:active::after {
+            width: 100%;
+        }
+    }
+}
+
+.projects-section {
+    .project {
+        transition: all 0.3s;
+
+        &:hover,
+        &:active {
+            border-radius: 20px;
+            color: black;
+            cursor: pointer;
+            background-color: rgb(214, 106, 67);
+        }
+    }
+}
